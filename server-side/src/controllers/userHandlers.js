@@ -9,7 +9,7 @@ dotenv.config();
 const secretKey = process.env.HIDDEN_STRING;
 const promisifiedQuery = util.promisify(db.query).bind(db);
 
-//user signup
+//user sign up
 export const createUser = async (req, res) => {
     try {
         const { firstname, lastname, othername, sex, email, phone, password, role, address } = req.body;
@@ -37,7 +37,7 @@ export const createUser = async (req, res) => {
     };
 };
 
-//user login
+//user sign in
 export const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body;
