@@ -1,0 +1,164 @@
+*,
+:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+html,body{
+    width: 100dvw;
+    height: 100dvh;
+    box-sizing:border-box;
+    background-color: blue;
+}
+.section{
+    background-color: rgb(9, 94, 65);
+    box-sizing: border-box;
+    height: 50px
+   
+
+
+}
+.first-page{
+    background-color: brown;
+    height: 40px;
+    
+}
+.major1{
+    background-color: rgb(204, 204, 207);
+    position: relative;
+   
+}
+
+.nav-section{
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home-icon{
+    font-size: 50px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+}
+.home-icon i{
+    color: rgb(42, 92, 126);
+}
+
+.home-icon:hover{
+    background-color:rgb(175, 180, 182);
+    transform: scale(1.1);   
+}
+
+
+
+.search-icon{
+    font-size: 50px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+}
+.search-icon i{
+    color: rgb(42, 92, 126);
+}
+
+.search-icon:hover{
+    background-color:rgb(175, 180, 182);
+    transform: scale(1.1);   
+}
+
+
+.bar-icon{
+    font-size: 50px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+}
+.bar-icon i{
+    color: rgb(42, 92, 126);
+}
+
+.bar-icon:hover{
+    background-color:rgb(175, 180, 182);
+    transform: scale(1.1);   
+}
+.nav-section{
+    box-sizing: border-box;
+    position: fixed;
+    border-radius: 10px;
+    width: 13%;
+    height: 100%;
+    background-color: rgb(232, 232, 233);
+    padding: 15px;
+    box-shadow:  rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;;
+}
+
+
+.logo-section{
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    position: static;
+}
+
+.logo-section img{
+    height: 70px;
+    margin-left: 60px;
+}
+
+.image-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex-wrap: 6;
+}
+
+.painter-img img{
+    height: 500px;
+    width: 1014px;
+    
+}
+ .bricks-img img{
+    height: 400px;
+    width: 1011px;
+
+ }
+
+ .elect-img img{
+    height: 600px;
+    width: 1011px;
+
+ }
+
+ .hair-img img{
+    height: 600px;
+    width: 1011px;
+
+ }
+ .laundry-img img{
+    height: 400px;
+     width: 1011px;
+    }
+
+
+    .capentry-img img{
+        height: auto;
+    width: 1011px;
+    }
+
+    .view-categories{
+        order: -1;
+        margin-inline-start: 800px;
+        font-size: 30px;
+        position: relative;
+    }
+
+
+    .view-categories .list{
+        display: block;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+    }

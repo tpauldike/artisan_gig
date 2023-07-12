@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;1,300;1,400&family=Roboto+Mono:wght@700&family=Roboto:wght@500&display=swap');
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+html,body{
+font-size: 16px;
+height: 100vh;
+width: 100vw;
+}
+
+.container{
+    height: 100px;
+    background-color: rgb(255, 255, 255)190, 190, 250;
+    width: 100vw;
+   min-width: 1000px;
+   box-shadow:   rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+   position: relative;
+   white-space: nowrap;
+   display: block;
+}
+   
+
+.sub{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  
+}
+.logo-section img{ 
+    height: 4rem;
+    width: 4rem;  
+    min-width: 1rem;
+    margin-left: 50px;
+    margin-top:10px;
+
+}
+.my-name{
+    font-family: Arial, Helvetica, sans-serif;
+        color: #1c96bb;
+        font-size: 25px;
+        margin-left: 5px;
+        margin-top:20px;
+
+}
+.my-name h2 span{
+    color: rgb(67, 67, 153);
+}
+.login-link{
+    margin-left: 789px;
+    display: block;
+}
+.login-link h3{
+    font-style: italic;
+    font-size: 21px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    color: #1c96bb;
+
+    
+}
+.login-link h3 span{
+    color: #4d5492;
+}
+.login-icon i{
+font-size: 30px;
+color: #303563b6;
+margin-left: 20px;
+}
+.section{
+    padding-top: 80px;
+    padding-left: 180px;
+    background-color: #ffffff;
+    width: 100vw;
+    min-width: 400px;
+}
+.major-page{
+     border-top-left-radius: 30px;
+    background-color: #e4e6f7b6;
+    padding: 10px;
+    height: 100vh;
+    width: 100%;
+    display: block;
+}
+.check{
+    display: flex;
+}
+    .write-ups{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        margin-top: 10%;
+        }
+    .write-ups h1{
+        font-style: italic;
+        font-size:35px;
+    }
+.write-ups h2{
+    margin-top: 60px;
+}
+.image-container img{
+    width: 40vw;
+    min-width: 50px;
+    
+}
+.sign-ups{
+    display: flex;
+    justify-content: center;
+    padding-left: 30%;
+    gap:230px;
+    
+}
+
+.client-container .client-sign-up{
+    background: linear-gradient(to right, rgb(53, 78, 95), rgb(113, 171, 209));
+    margin: 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+    padding: 0;
+    font-size: 18px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgba(10, 10, 10, 0.911);
+    transition: box-shadow 0.15secs;
+}
+
+.client-container span {
+    color: #e9eef1ec;
+}
+.client-sign-up:hover{
+    box-shadow: 5px 5px 10px rgb(122, 115, 115);
+}
+  .artisan-container .artisan-sign-up{
+    background: linear-gradient(to right, rgb(53, 78, 95), rgb(113, 171, 209));
+    margin: 0;
+    border: none;
+    border-radius: 50px;
+    width: 150px;
+    height: 30px;
+    padding: 0;
+    font-size: 18px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: rgba(10, 10, 10, 0.911);
+    cursor: pointer;
+    transition: box-shadow 0.15secs;
+}
+  
+  .artisan-container span {
+    color: #e9eef1ec;
+  }
+  .artisan-sign-up:hover{
+  box-shadow: 5px 5px 10px rgb(122, 115, 115);
+}
+.form-cont{
+display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+}
+.form-cont.show {
+    display: block;
+  }
+
+  .form-container{
+    display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: rgb(114, 12, 12);
+      padding: 20px;
+    }
+    .form-container.show{
+        display: bloc;
+    }
