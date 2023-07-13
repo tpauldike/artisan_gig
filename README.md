@@ -19,8 +19,9 @@ ArtisanGig is a web app that enables users to connect with local artisans to get
 
 ### User
 
-* `/user/createUser`: This API is used for user sign up.
-* `/user/loginUser`: This API is used for user authentication and sign in.
+* `/user/sign_up`: This API is used for user sign up.
+* `/user/sign_in`: This API is used for user authentication and sign in.
+* `/user/delete`: 
 
 ### Artwork 
 
