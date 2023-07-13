@@ -1,1 +1,55 @@
 # ArtisanGig
+![artisan_gig_landing_page](https://github.com/tpauldike/rough_work/blob/main/designs/ArtisanGig_mockup.jpg)
+ArtisanGig is a web app that enables users to connect with local artisans to get the services they need. It allows artisans to register their artwork(s) and lets the users send feedback and ratings for the service received.
+
+## Technology Stack
+
+**Frontend**
+- HTML 
+- CSS 
+- JavaScript
+
+**Backend**
+- Express.js
+
+**Database**
+- MySQL
+
+## APIs
+
+### User
+
+* `/user/createUser`: This API is used for user sign up.
+* `/user/loginUser`: This API is used for user authentication and sign in.
+
+### Artwork 
+
+* `/artwork/create`: This API is used to create artwork by providing information such as the category of the artwork, description, and artisan credentials..
+* `/artwork/update`: This API is used to update any artwork initially created.
+* `/artwork/delete`: This API is used to delete any artwork initially created.
+* `/artwork/categories`: This API is used to view all categories of artisans available on the app.
+* `/artwork/artworks`: This API is used to view artworks registered under the various categories and reviews. 
+
+### Feedback
+`/feedback`: This API is used to send feedback aand ratings 
+
+## Installation
+
+To install and run the app locally:
+- git clone the repo
+- run npm install
+- have a .env file with the needed credentials to connect to MySQL (do this on the server side)
+- Have MySQL installed on your localhost
+- Then run the app on your local server, frontend or port 5000 and backend on port 3000 of use Postman to interact with the APIs directly.
+
+## Deployment
+
+This app is hosted on Vercel but still getting fixed and not launched
+
+## Contributing
+
+Please read [CONTRIBUTION.md](./CONTRIBUTION.md) for details on our code of conduct, and the process for submitting pull requests.
+
+## Support
+
+For any help and support, please contact [me](mailto:topman4loveworld@gmail.com).
