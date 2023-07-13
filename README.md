@@ -40,11 +40,11 @@ To install and run the app locally:
 - run npm install
 - have a .env file with the needed credentials to connect to MySQL (do this on the server side)
 - Have MySQL installed on your localhost
-- Then run the app on your local server, frontend or port 5000 and backend on port 3000 of use Postman to interact with the APIs directly.
+- Then run the app on your local server, frontend or port 5000 and backend on port 3000, or use Postman to interact with the APIs directly.
 
 ## Deployment
 
-This app is hosted on Vercel but still getting fixed and not launched
+The app is hosted on Vercel but still getting fixed and not launched yet
 
 ## Contributing
 
