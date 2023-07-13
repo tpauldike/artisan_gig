@@ -54,7 +54,7 @@ Please read [CONTRIBUTION.md](./CONTRIBUTION.md) for details on our code of cond
 ## Support
 
 For any help and support, please contact [me](mailto:topman4loveworld@gmail.com).
-## Our our roles
+## Our Roles/ Authors
 
 
 Moses - front end development development (structure & styling), presentation
