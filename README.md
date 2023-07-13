@@ -54,3 +54,11 @@ Please read [CONTRIBUTION.md](./CONTRIBUTION.md) for details on our code of cond
 ## Support
 
 For any help and support, please contact [me](mailto:topman4loveworld@gmail.com).
+## Our Roles/ Authors
+
+
+Moses - front end development development (structure & styling), presentation
+
+Jerome - architectural structure, documentation, back end development
+
+Topman - database schema/design, APIs, documentation, deployment.
