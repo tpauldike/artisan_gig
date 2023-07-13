@@ -182,9 +182,9 @@ display: none;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      background-color: rgb(114, 12, 12);
+      background-color: rgb(255, 255, 255);
       padding: 20px;
     }
     .form-container.show{
-        display: bloc;
+        display: block;
     }
