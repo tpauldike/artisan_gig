@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 app.get("/test_route", (req, res) => {
-    return res.json({message: "e dey work!"})
+    return res.json({message: "The server is up and running"})
 })
 
 connection
