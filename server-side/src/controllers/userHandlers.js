@@ -83,7 +83,7 @@ export const deleteUser = async (req, res) => {
         await promisifiedQuery("DELETE FROM artwork WHERE user_id=?", [checkedUser[0].user_id]);
         await promisifiedQuery("DELETE FROM user WHERE user_id=?", [checkedUser[0].user_id]);
 
-        return res.status(200).json({ message: `User ${checkedUser[0].firstname} ${checkedUser[0].lastname} successfully deleted` })
+        return res.status(200).json({ message: `All data for the user, ${checkedUser[0].firstname} ${checkedUser[0].lastname}, successfully deleted` })
     } catch (error) {
         console.log(error);
         return res.status(500).json({ message: "Internal server error!" })
