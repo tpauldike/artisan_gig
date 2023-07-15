@@ -1,10 +1,11 @@
 import express from "express";
-import { createUser, loginUser } from "../controllers/userHandlers.js";
+import { createUser, deleteUser, loginUser } from "../controllers/userHandlers.js";
+import getBusinessId from "../middleware/authenticateUser.js";
 
 const router = express.Router();
 
 router.post("/sign_up", createUser);
 router.post("/sign_in", loginUser);
-
+router.delete("/delete", getBusinessId, deleteUser);
 
 export default router;

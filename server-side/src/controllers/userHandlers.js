@@ -53,7 +53,7 @@ export const loginUser = async (req, res) => {
             return res.status(403).json({ message: "Email or password incorrect!!" });
         }
 
-        const token = webToken.sign({ business_id: checkedUser }, secretKey, { expiresIn: "1hr" });
+        const token = webToken.sign({ user_id: checkedUser }, secretKey, { expiresIn: "1hr" });
 
         return res.status(200).json({ message: `${checkedUser[0].firstname} successfully logged in`, token });
 
@@ -66,8 +66,26 @@ export const loginUser = async (req, res) => {
 //delete user
 export const deleteUser = async (req, res) => {
     try {
-        
+        const { email, password } = req.body;
+
+        const checkedUser = await promisifiedQuery("SELECT * FROM user WHERE email = ?", [email]);
+
+        if (checkedUser.length === 0) {
+            return res.status(403).json({ message: "User does not exist!" });
+        }
+
+        const passwordValidated = await bcrypt.compare(password, checkedUser[0].password);
+
+        if (!passwordValidated) {
+            return res.status(403).json({ message: "Operation failed!" });
+        }
+
+        await promisifiedQuery("DELETE FROM artwork WHERE user_id=?", [checkedUser[0].user_id]);
+        await promisifiedQuery("DELETE FROM user WHERE user_id=?", [checkedUser[0].user_id]);
+
+        return res.status(200).json({ message: `User ${checkedUser[0].firstname} ${checkedUser[0].lastname} successfully deleted` })
     } catch (error) {
-        
+        console.log(error);
+        return res.status(500).json({ message: "Internal server error!" })
     }
 }
