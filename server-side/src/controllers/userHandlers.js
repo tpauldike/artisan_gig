@@ -25,9 +25,6 @@ export const createUser = async (req, res) => {
 
         await promisifiedQuery("INSERT INTO user (user_id, firstname, lastname, othername, sex, email, phone, password, role, address) VALUES (?,?,?,?,?,?,?,?,?,?)", [user_id, firstname, lastname, othername, sex, email, phone, hashedPassword, role, address]);
 
-        const newlyCreatedUser = await promisifiedQuery("SELECT * FROM user WHERE user_id=?", [user_id])
-        console.log(newlyCreatedUser);
-
         const token = webToken.sign({ user_id }, secretKey, { expiresIn: "1hr" });
 
         return res.status(201).json({ message: `New ${sex} ${role}, ${firstname} ${lastname}, created sucessfully with the email ${email} and phone no. ${phone}, located at ${address}`, token });
@@ -62,6 +59,28 @@ export const loginUser = async (req, res) => {
         return res.status(500).json({ message: "Internal Server Error!" });
     }
 }
+
+//update user info
+export const updateUser = async (req, res) => {
+    try {
+        const { firstname, lastname, othername, sex, email, phone, role, address } = req.body;
+
+        const checkUserEmail = await promisifiedQuery("SELECT * FROM user WHERE email = ?", [email]);
+
+        if (checkUserEmail.length > 0) {
+            return res.status(409).json({ message: "User with this email already exists!" })
+        }
+
+        await promisifiedQuery("UPDATE user SET firstname=?, lastname=?, othername=?, sex=?, email=?, phone=?, role=?, address=?)", [firstname, lastname, othername, sex, email, phone, role, address]);
+
+        return res.status(201).json({ message: "User updated successfully" });
+
+    } catch (error) {
+        console.log("Error updating user:", error);
+        return res.status(500).json({ message: "Internal Server Error!" });
+    };
+};
+
 
 //delete user
 export const deleteUser = async (req, res) => {
