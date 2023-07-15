@@ -15,6 +15,15 @@ ArtisanGig is a web app that enables users to connect with local artisans to get
 **Database**
 - MySQL
 
+## The Team
+ArtisanGig was built by a team of three colleagues, who were at the finish line of the ALX SE 9 months foundations; the name and roles of the team members were as follows:
+
+Name | Role 
+---- | ----
+[Moses Isang](https://github.com/Mohzis1) | front end development (structure & styling), presentation
+[Jerome Udoh](https://github.com/Jubasstech) | architectural structure, documentation, back end development
+[Topman Paul-Dike](https://github.com/tpauldike) | database schema/design, APIs, documentation, deployment.
+
 ## APIs
 
 ### User
