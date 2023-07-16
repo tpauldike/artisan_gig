@@ -34,12 +34,27 @@
                 </div>
                 <div class="login-link">
                     <h3>log<span>in</span></h3>
+                    <form action="" class="loginform">
+                        
+                        <span class="loginclose" id="loginBtn">&times;</span>
+
+                        <div class="labels">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="labels">
+                            <label for="password">password:</label>
+                            <input type="password" id="password" name="password" placeholder="" required>
+                            </div>
+
                 </div>
                 <div class="login-icon">
                     <i class="fa-regular fa-circle-user"></i>
                 </div>
             </div>
         </div>
+        <!--End of top page-->
 
 
 
@@ -64,7 +79,7 @@
             <div class="client-container" id="clientContainer">
                       
                 <div class="buttoncont" >
-                   <button type="submit"   id="clientSignup" class="client-sign-up">Client <span>sign up</span></button>
+                   <button  type="submit"   id="clientSignup" class="client-sign-up">Client <span>sign up</span></button>
                 </div>
                    <div id="formContainer" class="form-container">
                     <form action="" id="myForm" class="my-form">
@@ -88,7 +103,7 @@
 
                             <div class="labels">
                                 <label for="sex">Sex</label>
-                                <select id="sex" name="sex" required>
+                                <select class="sex" id="sex" name="sex" required>
                                     <option value="">Select</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
@@ -107,10 +122,12 @@
                             </div>
                     
                             <div class="form-sub-btn">
-                                <button type="submit">Submit</button>
+                                
+                                <button type="submit"><a href="Styles/Welcome_page.html">Submit</a></button>
+                           
                             </div>
                         </form>
-                        <script src="./Scripts/kin.js"></script>
+                        
                    </div>
                 </div>
 
@@ -133,11 +150,11 @@
                         </div>
                         <div class="labels">
                             <label for="name">Other Name:</label>
-                            <input type="text" id="othername" name="othername" placeholder="Enter name (optional)">
+                            <input type="text" id="othername" name="othername" placeholder="Enter othername (optional)">
                         </div>
                         <div class="labels">
                             <label for="sex">Sex</label>
-                            <select id="sex" name="sex" required>
+                            <select class="sex" id="sex" name="sex" required>
                                 <option value="">Select</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
@@ -159,7 +176,7 @@
                     </form>
                 </div>
             </div>
-<script src="./Scripts/kin.js"></script>
+<script src="./Scripts/buttons.js"></script>
 
         </div>
     </section>
