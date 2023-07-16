@@ -169,12 +169,10 @@ display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 20px;
 }
-.form-cont.show {
-    display: block;
-  }
+
 
   .form-container{
     display: none;
@@ -185,6 +183,128 @@ display: none;
       background-color: rgb(255, 255, 255);
       padding: 20px;
     }
-    .form-container.show{
-        display: block;
+
+
+
+
+
+    .my-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+       
+      }
+      
+      .my-form .clientclose{
+      color: rgb(8, 8, 8);
+      font-size: 40px;
+      cursor: pointer;
+        
+      }
+      
+      .my-form input[type="text"],
+      .my-form input[type="email"],
+      .my-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .my-form select.sex{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .my-form button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .my-form button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      
+      
+
+
+      .myform {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
     }
+      
+      .myform .close{
+      color: rgb(8, 8, 8);
+      font-size: 40px;
+      cursor: pointer;
+        
+      }
+      
+      .myform input[type="text"],
+      .myform input[type="email"],
+      .myform input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      .myform select.sex{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      
+      .myform button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .myform button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+
+      .login-link .loginform{
+        display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  background-color: #ffffff;
+  max-width: 600px;
+        margin: 0 auto;
+        border-radius: 5px;
+    }
+ 
+
+ .loginform input[type="email"],
+      .loginform input[type="password"] {
+        width: 60%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
