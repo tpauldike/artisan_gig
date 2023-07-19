@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 const secretKey = process.env.HIDDEN_STRING;
 
-export const getBusinessId = (req, res, next) => {
+const getBusinessId = (req, res, next) => {
     try {
         const authHeader = req.headers.authorization;
         if (!authHeader || String(authHeader).startsWith("User")) {
