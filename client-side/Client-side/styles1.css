@@ -30,8 +30,7 @@ width: 100vw;
 .sub{
     display: flex;
     align-items: center;
-    white-space: nowrap;
-  
+    white-space: nowrap;  
 }
 .logo-section img{ 
     height: 4rem;
@@ -39,7 +38,6 @@ width: 100vw;
     min-width: 1rem;
     margin-left: 50px;
     margin-top:10px;
-
 }
 .my-name{
     font-family: Arial, Helvetica, sans-serif;
@@ -47,7 +45,6 @@ width: 100vw;
         font-size: 25px;
         margin-left: 5px;
         margin-top:20px;
-
 }
 .my-name h2 span{
     color: rgb(67, 67, 153);
@@ -62,17 +59,19 @@ width: 100vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: lighter;
     color: #1c96bb;
-
-    
+    cursor: pointer;
 }
+
 .login-link h3 span{
     color: #4d5492;
 }
+
 .login-icon i{
 font-size: 30px;
 color: #303563b6;
 margin-left: 20px;
 }
+
 .section{
     padding-top: 80px;
     padding-left: 180px;
@@ -80,6 +79,7 @@ margin-left: 20px;
     width: 100vw;
     min-width: 400px;
 }
+
 .major-page{
      border-top-left-radius: 30px;
     background-color: #e4e6f7b6;
@@ -107,14 +107,12 @@ margin-left: 20px;
 .image-container img{
     width: 40vw;
     min-width: 50px;
-    
 }
 .sign-ups{
     display: flex;
     justify-content: center;
     padding-left: 30%;
     gap:230px;
-    
 }
 
 .client-container .client-sign-up{
@@ -160,9 +158,11 @@ margin-left: 20px;
   .artisan-container span {
     color: #e9eef1ec;
   }
+
   .artisan-sign-up:hover{
   box-shadow: 5px 5px 10px rgb(122, 115, 115);
 }
+
 .form-cont{
 display: none;
   position: absolute;
@@ -173,7 +173,6 @@ display: none;
   padding: 20px;
 }
 
-
   .form-container{
     display: none;
       position: absolute;
@@ -183,25 +182,19 @@ display: none;
       background-color: rgb(255, 255, 255);
       padding: 20px;
     }
-
-
-
-
-
+    
     .my-form {
         max-width: 400px;
         margin: 0 auto;
         padding: 20px;
         background-color: #f2f2f2;
         border-radius: 5px;
-       
-      }
+    }
       
       .my-form .clientclose{
       color: rgb(8, 8, 8);
       font-size: 40px;
       cursor: pointer;
-        
       }
       
       .my-form input[type="text"],
@@ -213,6 +206,7 @@ display: none;
         border: 1px solid #ccc;
         border-radius: 4px;
       }
+
       .my-form select.sex{
         width: 100%;
         padding: 10px;
@@ -235,10 +229,7 @@ display: none;
       .my-form button[type="submit"]:hover {
         background-color: #45a049;
       }
-      
-      
-
-
+            
       .myform {
         max-width: 400px;
         margin: 0 auto;
@@ -251,8 +242,7 @@ display: none;
       color: rgb(8, 8, 8);
       font-size: 40px;
       cursor: pointer;
-        
-      }
+     }
       
       .myform input[type="text"],
       .myform input[type="email"],
@@ -263,6 +253,7 @@ display: none;
         border: 1px solid #ccc;
         border-radius: 4px;
       }
+
       .myform select.sex{
         width: 100%;
         padding: 10px;
@@ -286,25 +277,153 @@ display: none;
         background-color: #45a049;
       }
 
-
-      .login-link .loginform{
-        display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  padding: 20px;
-  background-color: #ffffff;
-  max-width: 600px;
+       .loginform {
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 20px;
+         background-color:  #e2e0e0;
+         max-width: 600px;
         margin: 0 auto;
         border-radius: 5px;
+        border: #45a049;
     }
  
-
  .loginform input[type="email"],
       .loginform input[type="password"] {
         width: 60%;
         padding: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
+      }
+
+      .loginform button[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4caf50;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      .loginform button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .loginform .loginclose{
+        color: rgb(8, 8, 8);
+        font-size: 30px;
+        cursor: pointer;
+      }
+          
+      .loginform .Forgetpw h2{
+        font-size: 12px;
+        text-align: center;
+      }
+
+
+
+      @media screen and (min-width: 300px) and (max-width: 991px) {
+       html, body{
+            min-width: 50px;
+            min-height: 50px;
+            height: 50px;
+            white-space:wrap;
+            
+        }
+        .logo-section img{ 
+            height: 2rem;
+            width: 2rem;  
+            min-width: 1rem;
+            margin-left: 20px;
+            margin-top:5px;
+        }
+
+        .my-name{
+            font-family: Arial, Helvetica, sans-serif;
+                color: #1c96bb;
+                font-size: 15px;
+                margin-left: 5px;
+                margin-top:20px;
+        }
+        .my-name h2 span{
+            color: rgb(67, 67, 153);
+        }
+        .login-link{
+            margin-left: 150px;
+            display: block;
+        }
+        .login-link h3{
+            font-style: italic;
+            font-size: 21px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: lighter;
+            color: #1c96bb;
+            cursor: pointer;
+        }
+        
+        .login-link h3 span{
+            color: #4d5492;
+        }
+        
+        .login-icon i{
+        font-size: 30px;
+        color: #303563b6;
+        margin-left: 20px;
+        }
+        
+        .section{
+            padding-top: 80px;
+            padding-left: 180px;
+            background-color: #ffffff;
+            width: 100vw;
+            min-width: 400px;
+        }
+        
+        .major-page{
+             border-top-left-radius: 30px;
+            background-color: #e4e6f7b6;
+            padding: 1px;
+            height: 100%px;
+            width: 200%;
+            display: block;
+        }
+        .check{
+            display: flex;
+        }
+            .write-ups{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                margin-top: 10%;
+                }
+            .write-ups h1{
+                font-style: italic;
+                font-size:35px;
+            }
+        .write-ups h2{
+            margin-top: 60px;
+        }
+        .image-container img{
+            width: 30vw;
+            height: 300px;
+            min-width: 50px;
+            margin-top: 50px;
+        }
+
+        .sign-ups{
+            display: grid;
+            justify-content: center;
+            padding-left: 10%;
+            padding-top: 40px;
+            row-gap: 20px;
+        }
+                                     
+        
+
+
       }

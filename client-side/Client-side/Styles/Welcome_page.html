@@ -9,12 +9,13 @@
         <meta name="keywords" content="jobs, artisans, services">
         <meta name="Author" content="Moses_Isang">
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">    
+        <link rel="apple-touch-icon" sizes="180x180" href="/client-side/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/client-side/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/client-side/favicon-16x16.png">
+        <link rel="manifest" href="/client-side/site.webmanifest">    
         <script src="https://kit.fontawesome.com/9583314658.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="/client-side/Client-side/styles2.css">
+        <link rel="stylesheet" type="text/css" href="feedback.css">
 
     <title>ArtisanGig</title>
      
@@ -89,6 +90,18 @@
                     <div>
                         <h1>Get a good artisan around your locality that can handle your job without stress</h1>
                     </div>
+
+                    <div class="feedback-link">
+                        <a href="#" onclick="showFeedbackForm()">Give Feedback</a>
+                      </div>
+                      
+                      <div class="feedback-form" style="display: none;">
+                        <h3>Feedback Form</h3>
+                        <p>Please provide your feedback below:</p>
+                        <textarea rows="4" placeholder="Your feedback..."></textarea>
+                        <button class="Fb_Btn" onclick="submitFeedback()">Send</button>
+                      </div>
+                      <script src="/client-side/Client-side/Scripts/feedback.js"></script>
 
                 </div>
 
