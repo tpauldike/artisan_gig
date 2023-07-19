@@ -63,15 +63,18 @@ export const loginUser = async (req, res) => {
 //update user info
 export const updateUser = async (req, res) => {
     try {
-        const { firstname, lastname, othername, sex, email, phone, role, address } = req.body;
 
-        const checkUserEmail = await promisifiedQuery("SELECT * FROM user WHERE email = ?", [email]);
+        const { user_id } = req;
 
-        if (checkUserEmail.length > 0) {
-            return res.status(409).json({ message: "User with this email already exists!" })
+        const { firstname, lastname, othername, sex, phone, role, address } = req.body;
+
+        const existingUser = await promisifiedQuery("SELECT * FROM user WHERE user_id = ?", [user_id]);
+
+        if (existingUser.length == 0) {
+            return res.status(409).json({ message: "You are not authorized to access the page" })
         }
 
-        await promisifiedQuery("UPDATE user SET firstname=?, lastname=?, othername=?, sex=?, email=?, phone=?, role=?, address=?)", [firstname, lastname, othername, sex, email, phone, role, address]);
+        await promisifiedQuery("UPDATE user SET firstname=?, lastname=?, othername=?, sex=?, phone=?, role=?, address=? WHERE user_id=?", [firstname, lastname, othername, sex, phone, role, address, user_id]);
 
         return res.status(201).json({ message: "User updated successfully" });
 

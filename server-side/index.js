@@ -2,6 +2,7 @@ import express from "express";
 import connection from "./src/database/db.js";
 import dotenv from "dotenv";
 import userRouter from "./src/routes/userRoute.js";
+import artworkRouter from "./src/routes/artworkRoute.js"
 dotenv.config()
 
 const app = express();
@@ -16,6 +17,7 @@ app.get("/test_route", (req, res) => {
 connection
 
 app.use("/user", userRouter);
+app.use("/artwork", artworkRouter);
 
 app.listen(port, () => (
     console.log(`Server listening on http://127.0.0.1:${port}`)
