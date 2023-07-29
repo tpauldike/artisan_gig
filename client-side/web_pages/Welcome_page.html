@@ -9,12 +9,13 @@
         <meta name="keywords" content="jobs, artisans, services">
         <meta name="Author" content="Moses_Isang">
         
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">    
+        <link rel="apple-touch-icon" sizes="180x180" href="/client-side/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/client-side/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/client-side/favicon-16x16.png">
+        <link rel="manifest" href="/client-side/site.webmanifest">    
         <script src="https://kit.fontawesome.com/9583314658.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="/client-side/Client-side/styles2.css">
+        <link rel="stylesheet" type="text/css" href="/client-side/web_pages/styles2.css">
+        <link rel="stylesheet" type="text/css" href="./Styles/feedback.css">
 
     <title>ArtisanGig</title>
      
@@ -24,13 +25,13 @@
         <div class="first-page">
             <div class="major1">  
                 <div class="logo-section">
-                    <img src="/client-side/Client-side/Images/logo1.png" alt="Logo of the website">
+                    <img src="/client-side/web_pages/Images/logo1.png" alt="Logo of the website">
                 </div> 
 
                 <nav class="nav" >
                 <div class="nav-section" style="display: flex;">
                     <div class="home-icon">
-                        <a href="/client-side/Client-side/Styles/Welcome_page.html"><i class="fa-solid fa-house"></i></a>
+                        <a href="/client-side/web_pages/Welcome_page.html"><i class="fa-solid fa-house"></i></a>
                     </div>
                     <div class="search-icon">
                         <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
@@ -45,22 +46,22 @@
                 
                 <div class="image-section">
                     <div class="painter-img">
-                        <img src="/client-side/Client-side/Images/painter.jpg" alt="">
+                        <img src="/client-side/web_pages/Images/painter.jpg" alt="">
                     </div>
                     <div class="bricks-img">
-                        <img src="/client-side/Client-side/Images/bricks.jpg" alt="">
+                        <img src="/client-side/web_pages/Images/bricks.jpg" alt="">
                     </div>
                     <div class="elect-img">
-                        <img src="/client-side/Client-side/Images/elect.jpg" alt="">
+                        <img src="/client-side/web_pages/Images/elect.jpg" alt="">
                     </div>
                     <div class="hair-img">
-                        <img src="/client-side/Client-side/Images/hair.jpg" alt="">
+                        <img src="/client-side/web_pages/Images/hair.jpg" alt="">
                     </div>
                     <div class="laundry-img">
-                        <img src="/client-side/Client-side/Images/laundry.jpg" alt="">
+                        <img src="/client-side/web_pages/Images/laundry.jpg" alt="">
                     </div>
                     <div class="capentry-img">
-                        <img src="/client-side/Client-side/Images/carpentry.jpg" alt="">
+                        <img src="/client-side/web_pages/Images/carpentry.jpg" alt="">
                     </div>
                     <div class="view-categories">
                         <a href="#" onclick="toggleDropdown()"><h2>View categories</h2></a>
@@ -84,11 +85,23 @@
                                 <li>Plumbimg services</li>                   
                             </div>
                             </ul>
-                          <script src="/client-side/Client-side/Scripts/kin2.js"></script>
+                          <script src="/client-side/web_pages/Scripts/kin2.js"></script>
                     </div>
                     <div>
                         <h1>Get a good artisan around your locality that can handle your job without stress</h1>
                     </div>
+
+                    <div class="feedback-link">
+                        <a href="#" onclick="showFeedbackForm()">Give Feedback</a>
+                      </div>
+                      
+                      <div class="feedback-form" style="display: none;">
+                        <h3>Feedback Form</h3>
+                        <p>Please provide your feedback below:</p>
+                        <textarea rows="4" placeholder="Your feedback..."></textarea>
+                        <button class="Fb_Btn" onclick="submitFeedback()">Send</button>
+                      </div>
+                      <script src="/client-side/web_pages/Scripts/feedback.js"></script>
 
                 </div>
 

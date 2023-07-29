@@ -1,0 +1,27 @@
+.feedback-form{
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 20px;
+background-color: #dddada;
+border: 1px solid #ddd;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+z-index: 999;
+border-radius: 2.5px;
+}
+
+.feedback-form h3{
+    color: blue;
+}
+
+.feedback-form .Fb_Btn{
+    width: 50%;
+    padding: 10px;
+    background-color: #36df3b;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
