@@ -166,7 +166,7 @@ margin-left: 20px;
 .form-cont{
 display: none;
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(255, 255, 255);
@@ -176,7 +176,7 @@ display: none;
   .form-container{
     display: none;
       position: absolute;
-      top: 50%;
+      top: 70%;
       left: 50%;
       transform: translate(-50%, -50%);
       background-color: rgb(255, 255, 255);
@@ -297,6 +297,10 @@ display: none;
         margin-bottom: 10px;
         border: 1px solid #ccc;
         border-radius: 4px;
+      }
+
+      .close-btn {
+        cursor: pointer;
       }
 
       .loginform button[type="submit"] {

@@ -27,7 +27,7 @@ export const createUser = async (req, res) => {
 
         const token = webToken.sign({ user_id }, secretKey, { expiresIn: "1hr" });
 
-        return res.status(201).json({ message: `New ${sex} ${role}, ${firstname} ${lastname}, created sucessfully with the email ${email} and phone no. ${phone}, located at ${address}`, token });
+        return res.status(201).json({ message: `New ${sex} ${role}, ${firstname} ${lastname}, created sucessfully`, token });
 
     } catch (error) {
         console.log("Error creating new user:", error);

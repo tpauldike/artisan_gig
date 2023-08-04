@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Get available Artisans around your locality.">
         <meta name="keywords" content="jobs, artisans, services">
         <meta name="Author" content="Moses_Isang">
-        
+
         <link rel="apple-touch-icon" sizes="180x180" href="/client-side/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/client-side/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/client-side/favicon-16x16.png">
-        <link rel="manifest" href="/client-side/site.webmanifest">    
+        <link rel="manifest" href="/client-side/site.webmanifest">
         <script src="https://kit.fontawesome.com/9583314658.js" crossorigin="anonymous"></script>
-        <script src="./Scripts/jv.js"></script>
-        
+        <!-- <script src="./Scripts/jv.js"></script> -->
+
     <title>ArtisanGig</title>
     <link rel="stylesheet" type="text/css" href="styles1.css">
-    
+
 </head>
 
 <body>
-    
+
     <!--top of the page-->
         <div class="container">
             <div class="sub">
@@ -35,12 +35,12 @@
                 <div class="login-link"  >
                     <h3 id="loginLink" style="display: block;">log<span>in</span></h3>
                     <form action="" class="loginform" id="login_Form" style="display: none;" >
-                        
+
                         <span class="loginclose" id="loginBtn">&times;</span>
 
                         <div class="labels">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="login-email" name="email" required>
                         </div>
 
                         <div class="labels">
@@ -87,57 +87,72 @@
         </div>
         <div class="sign-ups" id="signUps">
             <div class="client-container" id="clientContainer">
-                      
+
                 <div class="buttoncont" >
                    <button  type="submit"   id="clientSignup" class="client-sign-up">Client <span>sign up</span></button>
                 </div>
                    <div id="formContainer" class="form-container">
-                    <form action="" id="myForm" class="my-form">
-                        
-                            <span class="clientclose" id="clientBtn">&times;</span>
+                    <form action="" id="user-form" class="my-form">
+
+                            <span class="close-btn" id="client-close">&times;</span>
 
                             <div class="labels">
                             <label for="name">First Name:</label>
-                            <input type="text" id="firstname" name="firstname" placeholder="Enter name" required>
+                            <input type="text" id="user-firstname" name="firstname" placeholder="Enter your firstname" required>
                             </div>
-                            
+
                             <div class="labels">
                             <label for="name">Last Name:</label>
-                            <input type="text" id="lastname" name="lastname" placeholder="Enter name" required>
+                            <input type="text" id="user-lastname" name="lastname" placeholder="Enter your surname" required>
                             </div>
 
                             <div class="labels">
                                 <label for="name">Other Name:</label>
-                                <input type="text" id="othername" name="othername" placeholder="Enter name (optional)">
+                                <input type="text" id="user-othername" name="othername" placeholder="Enter your middlename (optional)">
                             </div>
 
                             <div class="labels">
                                 <label for="sex">Sex</label>
-                                <select class="sex" id="sex" name="sex" required>
+                                <select class="sex" id="user-sex" name="sex" required>
                                     <option value="">Select</option>
                                     <option value="male">Male</option>
                                     <option value="female">Female</option>
-                                    <option value="other">I'll rather not say</option>
+                                    <option value="others">Others</option>
                                   </select>
                             </div>
 
-                        <div class="labels">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Enter email" required>
-                        </div>
-                            
-                        <div class="labels">
-                            <label for="name">Phone No.:</label>
-                            <input type="text" id="number" name="number" placeholder="Enter phone no." required>
+                            <div class="labels">
+                                <label for="email">Email:</label>
+                                <input type="email" id="user-email" name="email" placeholder="Enter your email (you@mail.com)" required>
                             </div>
-                    
+
+                            <div class="labels">
+                                <label for="name">Phone no.:</label>
+                                <input type="text" id="user-phone" name="phone" placeholder="Your phone no. (+234********)" required>
+                            </div>
+
+                            <div class="labels">
+                                <label for="name">New Password:</label>
+                                <input type="password" id="user-password" name="password" placeholder="Enter a new password" required>
+                            </div>
+
+                            <div class="labels">
+                                <label for="name">Confirm Password:</label>
+                                <input type="password" id="user-password-confirmed" name="password-confirmed" placeholder="Confirm your password" required>
+                            </div>
+
+                            <div class="labels">
+                                <label for="name">Resident Address:</label>
+                                <textarea name="user-address" id="user-address" cols="42" rows="3" placeholder="[optional] Your Street, Community, City, State, & Country"></textarea>
+                            </div>
+
                             <div class="form-sub-btn">
-                                
-                                <button type="submit"><a href="Welcome_page.html">Submit</a></button>
-                           
+
+                                <button type="submit" id="client-submit">Submit</button>
+
                             </div>
                         </form>
-                        
+
                    </div>
                 </div>
 
@@ -146,42 +161,42 @@
                     <button  type="submit"  class="artisan-sign-up" id="artisanSignup">Artisan <span id="artisanSignup">sign up</span></button>
                 </div>
                 <div class="form-cont" id="formCont">
-                    <form action="" class="myform" id="myForm">
-                        
-                            <span class="close" id="closeBtn">&times;</span>
-                        
+                    <form action="" class="my-form" id="artisan-form">
+
+                            <span class="close-btn" id="artisan-close">&times;</span>
+
                         <div class="labels">
                             <label for="name">First Name:</label>
-                            <input type="text" placeholder="Enter your firstname" required>
+                            <input type="text" id="artisan-firstname" placeholder="Enter your first name" required>
                         </div>
                         <div class="labels">
                             <label for="name">Last Name:</label>
-                            <input type="text" placeholder="Enter your lastname" required>
+                            <input type="text" id="artisan-lastname" placeholder="Enter your last name" required>
                         </div>
                         <div class="labels">
                             <label for="name">Other Name:</label>
-                            <input type="text" id="othername" name="othername" placeholder="Enter othername (optional)">
+                            <input type="text" id="artisan-othername" name="othername" placeholder="Enter other names [optional]">
                         </div>
                         <div class="labels">
                             <label for="sex">Sex</label>
-                            <select class="sex" id="sex" name="sex" required>
+                            <select class="sex" id="artisan-sex" name="sex" required>
                                 <option value="">Select</option>
                                 <option value="male">Male</option>
                                 <option value="female">Female</option>
-                                <option value="other">I'll rather not say</option>
+                                <option value="others">Others</option>
                               </select>
                         </div>
                         <div class="labels">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Enter email" required>
+                            <input type="email" id="artisan-email" name="email" placeholder="Enter your email (you@mail.com)" required>
                         </div>
-                       
+
                         <div class="labels">
                             <label for="name">Phone no.:</label>
-                            <input type="text" id="number" name="number" placeholder="Enter your phone no." required>
+                            <input type="text" id="artisan-phone" name="phone" placeholder="Your phone no. (+234********)" required>
                         </div>
                         <div class="form-sub-btn">
-                            <button type="submit">Submit</button>
+                            <button type="submit" id="artisan-submit">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -190,11 +205,11 @@
 
         </div>
     </section>
-    
-                
-           
-           
-        
+
+
+
+
+
 
 </body>
 </html>
