@@ -12,8 +12,8 @@ const port = process.env.PORT || 3000;
 app.use(cors())
 app.use(express.json());
 
-app.get("/test_route", (req, res) => {
-    return res.json({message: "The server is up and running"})
+app.get("/", (req, res) => {
+    return res.json({message: "Howdy! You are now connected to ArtisanGig API"})
 })
 
 connection
