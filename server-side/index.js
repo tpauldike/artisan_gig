@@ -22,5 +22,5 @@ app.use("/user", userRouter);
 // app.use("/artwork", artworkRouter);
 
 app.listen(port, () => (
-    console.log(`Server listening on http://127.0.0.1:${port}`)
+    console.log("Server listening on", process.env.HOST)
 ));
