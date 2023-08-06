@@ -5,8 +5,8 @@ const firstBtn = document.querySelector("#clientSignup");
 const clientBtn = document.querySelector("#client-close");
 const clientSubmit = document.getElementById("client-submit");
 // const artisanSubmit = document.getElementById("artisan-submit");
-const artisanForm = document.getElementById('myForm');
-const baseURL = 'artisangig-api.vercel.app';
+// const artisanForm = document.getElementById('myForm');
+// const baseURL = 'artisangig-api.vercel.app';
 
 firstBtn.addEventListener('click', function () {
     if (formCont.style.display === 'block') {
@@ -69,11 +69,11 @@ clientSubmit.addEventListener('click', async (event) => {
     }
     if (formData.password !== passwordNotCofirmed.value) {
         alert('The second password does not match the first one you entered');
-        return('Password entries not same');
+        return ('Password entries not same');
     }
 
     try {
-        const response = await fetch(`${baseURL}/user/sign_up`, {
+        const response = await fetch("/user/sign_up", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData)
@@ -81,9 +81,9 @@ clientSubmit.addEventListener('click', async (event) => {
 
         const data = await response.json();
         console.log(data);
-        if (data.message === `New ${formData.sex} ${formData.role}, ${formData.firstname} ${formData.lastname}, created sucessfully`){
+        if (data.message === `New ${formData.sex} ${formData.role}, ${formData.firstname} ${formData.lastname}, created sucessfully`) {
             alert("You successfully signed up, you may sign in now");
-            setTimeout( () => location.reload(), 2000);
+            setTimeout(() => location.reload(), 2000);
         };
         // formData.reset();
         // alert('You successfully signed up, please login');
