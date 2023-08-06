@@ -6,7 +6,7 @@ const clientBtn = document.querySelector("#client-close");
 const clientSubmit = document.getElementById("client-submit");
 // const artisanSubmit = document.getElementById("artisan-submit");
 const artisanForm = document.getElementById('myForm');
-const baseURL = 'artisangig-api.vercel.app:3000';
+const baseURL = 'artisangig-api.vercel.app';
 
 firstBtn.addEventListener('click', function () {
     if (formCont.style.display === 'block') {
