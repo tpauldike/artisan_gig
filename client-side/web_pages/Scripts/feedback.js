@@ -8,7 +8,7 @@ function showFeedbackForm() {
     const textarea = feedbackForm.querySelector('textarea');
     const feedbackText = textarea.value;
     
-    // Here, I logged tge feedback to the console after submission.
+    // Here, I logged the feedback to the console after submission.
     // This needs to be logged to the developers
     console.log('Feedback:', feedbackText);
     

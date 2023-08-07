@@ -1,3 +1,5 @@
+const clientSubmit = document.getElementById('client-submit');
+
 clientSubmit.addEventListener('click', async (event) => {
     event.preventDefault();
     const firstNameInput = document.getElementById('user-firstname');
