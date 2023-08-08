@@ -9,13 +9,13 @@
         <meta name="keywords" content="jobs, artisans, services">
         <meta name="Author" content="Moses_Isang">
         
-        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
         <link rel="manifest" href="./site.webmanifest">
         <script src="https://kit.fontawesome.com/9583314658.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="./Styles/styles2.css">
-        <link rel="stylesheet" type="text/css" href="./Styles/feedback.css">
+        <link rel="stylesheet" type="text/css" href="../styles/styles2.css">
+        <link rel="stylesheet" type="text/css" href="../styles/feedback.css">
 
     <title>ArtisanGig | Home</title>
      
@@ -25,7 +25,7 @@
         <div class="first-page">
             <div class="major1">  
                 <div class="logo-section">
-                    <img src="./Images/logo1.png" alt="Logo of the website">
+                    <img src="../images/logo1.png" alt="Logo of the website">
                 </div> 
 
                 <nav class="nav" >
@@ -34,10 +34,10 @@
                         <a href="./home.html"><i class="fa-solid fa-house"></i></a>
                     </div>
                     <div class="search-icon">
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </div>
                     <div class="bar-icon">
-                        <a href=""><i class="fa-solid fa-bars"></i></a>
+                        <a href="#"><i class="fa-solid fa-bars"></i></a>
                     </div>
 
                 </div>
@@ -46,25 +46,25 @@
                 
                 <div class="image-section">
                     <div class="painter-img">
-                        <img src="./Images/painter.jpg" alt="">
+                        <img src="../images/painter.jpg" alt="">
                     </div>
                     <div class="bricks-img">
-                        <img src="./Images/bricks.jpg" alt="">
+                        <img src="../images/bricks.jpg" alt="">
                     </div>
                     <div class="elect-img">
-                        <img src="./Images/elect.jpg" alt="">
+                        <img src="../images/elect.jpg" alt="">
                     </div>
                     <div class="hair-img">
-                        <img src="./Images/hair.jpg" alt="">
+                        <img src="../images/hair.jpg" alt="">
                     </div>
                     <div class="laundry-img">
-                        <img src="./Images/laundry.jpg" alt="">
+                        <img src="../images/laundry.jpg" alt="">
                     </div>
                     <div class="capentry-img">
-                        <img src="./Images/carpentry.jpg" alt="">
+                        <img src="../images/carpentry.jpg" alt="">
                     </div>
                     <div class="view-categories">
-                        <a href="#" onclick="toggleDropdown()"><h2>View categories</h2></a>
+                        <button onclick="toggleDropdown()">View categories</button>
                         <ul id="category-dropdown" class="dropdown" style="display: none;">
                             <div class="list">
                                 <li>Aluminium/Glass</li>
@@ -91,17 +91,18 @@
                         </div>
                         
                         <div class="feedback-link">
-                            <a href="#" onclick="showFeedbackForm()">Give Feedback</a>
+                            <p id="give-feedback"><strong style="cursor: pointer; color: rgb(64, 145, 145)"> Give Feedback</strong></p>
                         </div>
                         
-                        <div class="feedback-form" style="display: none;">
+                        <div class="feedback-form" id="feedback" style="display: none;">
+                        <span class="loginclose" id="close-feedback" style="cursor: pointer;">&times;</span>
                             <h3>Feedback Form</h3>
                             <p>Please provide your feedback below:</p>
                             <textarea rows="4" placeholder="Your feedback..."></textarea>
                             <button class="Fb_Btn" onclick="submitFeedback()">Send</button>
                         </div>
-                        <script src="./Scripts/feedback.js"></script>
-                        <script src="./Scripts/categories.js"></script>
+                        <script src="../scripts/feedback.js"></script>
+                        <script src="../scripts/categories.js"></script>
                         
                     </div>
                     

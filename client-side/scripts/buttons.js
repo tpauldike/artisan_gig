@@ -1,4 +1,3 @@
-
 const clientFormContainer = document.getElementById('formContainer');
 const artisanFormContainer = document.getElementById('formCont');
 const loginFormContainer = document.getElementById('login_Form');
@@ -14,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     clientSignup.addEventListener('click', function (event) {
         artisanFormContainer.style.display = 'none';
         loginFormContainer.style.display = 'none';
-        clientFormContainer.style.display = 'block'; // Show the form container
+        clientFormContainer.style.display = (clientFormContainer.style.display === "none") ? "block" : "none";
         event.stopPropagation(); // Prevent event bubbling to the document
     });
 
@@ -45,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     artisanSignup.addEventListener('click', function (event) {
         clientFormContainer.style.display = 'none';
         loginFormContainer.style.display = 'none';
-        artisanFormContainer.style.display = 'block';
+        artisanFormContainer.style.display = (artisanFormContainer.style.display === "none") ? "block" : "none";
         event.stopPropagation();
     });
 
@@ -73,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loginBtn.addEventListener('click', function (event) {
         clientFormContainer.style.display = 'none';
         artisanFormContainer.style.display = 'none';
-        loginFormContainer.style.display = 'block';
+        loginFormContainer.style.display = (loginFormContainer.style.display === "none") ? "block" : "none";
         event.stopPropagation();
     });
 

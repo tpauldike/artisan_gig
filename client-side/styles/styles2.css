@@ -12,6 +12,11 @@ html,body{
     height: 100dvh;
     box-sizing:border-box;
     background-color: blue;
+    /* user-select: none; */
+}
+
+a, button{
+    cursor: pointer;
 }
 .section{
     background-color: rgb(9, 94, 65);
@@ -162,6 +167,3 @@ html,body{
         position: absolute;
         background-color: rgb(255, 255, 255);
     }
-
-
-    
