@@ -11,31 +11,8 @@ const baseURL = "http://localhost:4001";
 
 clientForm.addEventListener('submit', async (event) => {
     event.preventDefault();
-    // const firstNameInput = document.getElementById('user-firstname');
-    // const lastNameInput = document.getElementById('user-lastname');
-    // const otherNameInput = document.getElementById('user-othername');
-    // const sexInput = document.getElementById('user-sex');
-    // const emailInput = document.getElementById('user-email');
-    // const phoneNumberInput = document.getElementById('user-phone');
-    // const confirmedPassword = document.getElementById('user-password-confirmed');
-    // const clientAddress = document.getElementById('user-address');
-
-    // const passwordNotCofirmed = document.getElementById('user-password')
-    // const formData = {
-    //     firstname: firstNameInput.value,
-    //     lastname: lastNameInput.value,
-    //     othername: otherNameInput.value,
-    //     sex: sexInput.value,
-    //     email: emailInput.value,
-    //     phone: phoneNumberInput.value,
-    //     password: confirmedPassword.value,
-    //     role: "Client",
-    //     address: clientAddress.value
-    // }
     const formData = new FormData(event.target)
-    // console.log(Object.fromEntries(formData.entries()));
     const formDataAsObject = Object.fromEntries(formData.entries())
-    // console.log(formDataAsObject);
 
     if (formDataAsObject['password'] !== formDataAsObject['password-confirmed']) {
         alert('The second password does not match the first one you entered');
