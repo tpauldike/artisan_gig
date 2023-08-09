@@ -7,7 +7,7 @@ const loginForm = document.getElementById('login_Form');
 const clientForm = document.getElementById('user-form');
 const artisanForm = document.getElementById('artisan-form');
 // const clientSignup = document.getElementById('client-submit');
-const baseURL = "http://localhost:4001";
+const baseURL = "https://artisangig-api.vercel.app";
 
 clientForm.addEventListener('submit', async (event) => {
     event.preventDefault();
