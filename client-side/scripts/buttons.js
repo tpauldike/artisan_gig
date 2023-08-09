@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
         artisanFormContainer.style.display = 'none';
         loginFormContainer.style.display = 'none';
         clientFormContainer.style.display = (clientFormContainer.style.display === "none") ? "block" : "none";
+        if (clientFormContainer.style.display === 'block') {
+            window.scrollTo(10, 30);
+        }
         event.stopPropagation(); // Prevent event bubbling to the document
     });
 
