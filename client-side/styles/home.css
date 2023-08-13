@@ -1,0 +1,21 @@
+body {
+user-select: none;
+}
+
+#logout-div{
+    position: relative;
+    text-align: right;
+}
+
+#logout {
+    cursor: pointer;
+}
+
+#user-initials{
+    background-color: rgb(218, 165, 32);
+    padding: 0.6rem;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 1.1rem;
+}

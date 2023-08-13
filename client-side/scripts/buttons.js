@@ -48,6 +48,9 @@ document.addEventListener('DOMContentLoaded', function () {
         clientFormContainer.style.display = 'none';
         loginFormContainer.style.display = 'none';
         artisanFormContainer.style.display = (artisanFormContainer.style.display === "none") ? "block" : "none";
+        if (artisanFormContainer.style.display === 'block') {
+            window.scrollTo(0, 0);
+        }
         event.stopPropagation();
     });
 

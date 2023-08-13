@@ -45,7 +45,7 @@
 
                         <div class="labels">
                             <label for="password">password:</label>
-                            <input type="password" id="password" name="password" placeholder="********" required>
+                            <input type="password" id="login-password" name="password" placeholder="********" required>
                             </div>
 
                             <div class="loginsub">
@@ -165,11 +165,11 @@
 
                         <div class="labels">
                             <label for="name">First Name:</label>
-                            <input type="text" id="artisan-firstname" placeholder="Enter your first name" required>
+                            <input type="text" id="artisan-firstname" name="firstname" placeholder="Enter your first name" required>
                         </div>
                         <div class="labels">
                             <label for="name">Last Name:</label>
-                            <input type="text" id="artisan-lastname" placeholder="Enter your last name" required>
+                            <input type="text" id="artisan-lastname" name="lastname" placeholder="Enter your last name" required>
                         </div>
                         <div class="labels">
                             <label for="name">Other Name:</label>
@@ -193,8 +193,18 @@
                             <label for="name">Phone no.:</label>
                             <input type="text" id="artisan-phone" name="phone" placeholder="Your phone no. (+234********)" required>
                         </div>
+                        <div class="labels">
+                            <label for="name">New Password:</label>
+                            <input type="password" id="artisan-password" name="password" placeholder="Enter a new password" required>
+                        </div>
+
+                        <div class="labels">
+                            <label for="name">Confirm Password:</label>
+                            <input type="password" id="artisan-password-confirmed" name="password-confirmed" placeholder="Confirm your password" required>
+                        </div>
+
                         <div class="form-sub-btn">
-                            <button type="submit" id="artisan-submit">Submit</button>
+                            <button type="submit" id="artisan-submit">Create Account</button>
                         </div>
                     </form>
                 </div>

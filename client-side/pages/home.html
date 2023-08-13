@@ -1,116 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Get available Artisans around your locality.">
-        <meta name="keywords" content="jobs, artisans, services">
-        <meta name="Author" content="Moses_Isang">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
-        <link rel="manifest" href="./site.webmanifest">
-        <script src="https://kit.fontawesome.com/9583314658.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="../styles/styles2.css">
-        <link rel="stylesheet" type="text/css" href="../styles/feedback.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get available Artisans around your locality."
+    />
+    <meta name="keywords" content="jobs, artisans, services" />
+    <meta name="Author" content="Moses_Isang" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/9583314658.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="../styles/styles2.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/feedback.css" />
+    <link rel="stylesheet" type="text/css" href="../styles/home.css" />
 
     <title>ArtisanGig | Home</title>
-     
-    </head>
-<body>
+  </head>
+  <body>
     <section class="section">
-        <div class="first-page">
-            <div class="major1">  
-                <div class="logo-section">
-                    <img src="../images/logo1.png" alt="Logo of the website">
-                </div> 
-
-                <nav class="nav" >
-                <div class="nav-section" style="display: flex;">
-                    <div class="home-icon">
-                        <a href="./home.html"><i class="fa-solid fa-house"></i></a>
-                    </div>
-                    <div class="search-icon">
-                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-                    </div>
-                    <div class="bar-icon">
-                        <a href="#"><i class="fa-solid fa-bars"></i></a>
-                    </div>
-
-                </div>
-                </nav>
-                <!--End of nav-->
-                
-                <div class="image-section">
-                    <div class="painter-img">
-                        <img src="../images/painter.jpg" alt="">
-                    </div>
-                    <div class="bricks-img">
-                        <img src="../images/bricks.jpg" alt="">
-                    </div>
-                    <div class="elect-img">
-                        <img src="../images/elect.jpg" alt="">
-                    </div>
-                    <div class="hair-img">
-                        <img src="../images/hair.jpg" alt="">
-                    </div>
-                    <div class="laundry-img">
-                        <img src="../images/laundry.jpg" alt="">
-                    </div>
-                    <div class="capentry-img">
-                        <img src="../images/carpentry.jpg" alt="">
-                    </div>
-                    <div class="view-categories">
-                        <button onclick="toggleDropdown()">View categories</button>
-                        <ul id="category-dropdown" class="dropdown" style="display: none;">
-                            <div class="list">
-                                <li>Aluminium/Glass</li>
-                                <li>Artist</li>
-                                <li>A.C/Refrigeration services</li>
-                                <li>Barber</li> 
-                                <li>Beautician</li>
-                                <li>Bricklayer/mason</li>
-                                <li>Capentry services</li>   
-                                <li>Catering services</li>
-                                <li>CCTV/DSTV installations</li>  
-                                <li>Electrical services</li>
-                                <li>Generator repairs</li>
-                                <li>Hairstylist/Make-Up Artist</li>
-                                <li>Painter/Wallpaper</li>   
-                                <li>Phone/Laptop repairs</li>
-                                <li>Photographer/Videographer</li>
-                                <li>Plumbimg services</li>                   
-                            </div>
-                            </ul>
-                        </div>
-                        <div>
-                            <h1>Get a good artisan around your locality that can handle your job without stress</h1>
-                        </div>
-                        
-                        <div class="feedback-link">
-                            <p id="give-feedback"><strong style="cursor: pointer; color: rgb(64, 145, 145)"> Give Feedback</strong></p>
-                        </div>
-                        
-                        <div class="feedback-form" id="feedback" style="display: none;">
-                        <span class="loginclose" id="close-feedback" style="cursor: pointer;">&times;</span>
-                            <h3>Feedback Form</h3>
-                            <p>Please provide your feedback below:</p>
-                            <textarea rows="4" placeholder="Your feedback..."></textarea>
-                            <button class="Fb_Btn" onclick="submitFeedback()">Send</button>
-                        </div>
-                        <script src="../scripts/feedback.js"></script>
-                        <script src="../scripts/categories.js"></script>
-                        
-                    </div>
-                    
+      <div class="first-page">
+        <div class="major1">
+          <div class="logo-section">
+            <img src="../images/logo1.png" alt="Logo of the website" />
+            <div id="logout-div">
+              <strong id="logout">logout</strong>
+              <span id="user-initials"></span>
             </div>
-            
+          </div>
+          <div><p><em>You are logged in as, <span id="signed-in-user"><strong></strong></span></em></p></div>
+
+          <nav class="nav">
+            <div class="nav-section" style="display: flex">
+              <div class="home-icon">
+                <a href="./home.html"><i class="fa-solid fa-house"></i></a>
+              </div>
+              <div class="search-icon">
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </div>
+              <div class="bar-icon">
+                <a href="#"><i class="fa-solid fa-bars"></i></a>
+              </div>
+            </div>
+          </nav>
+          <!--End of nav-->
+
+          <div class="image-section">
+            <div class="painter-img">
+              <img src="../images/painter.jpg" alt="" />
+            </div>
+            <div class="bricks-img">
+              <img src="../images/bricks.jpg" alt="" />
+            </div>
+            <div class="elect-img">
+              <img src="../images/elect.jpg" alt="" />
+            </div>
+            <div class="hair-img">
+              <img src="../images/hair.jpg" alt="" />
+            </div>
+            <div class="laundry-img">
+              <img src="../images/laundry.jpg" alt="" />
+            </div>
+            <div class="capentry-img">
+              <img src="../images/carpentry.jpg" alt="" />
+            </div>
+            <div class="view-categories">
+              <button onclick="toggleDropdown()">View categories</button>
+              <ul id="category-dropdown" class="dropdown" style="display: none">
+                <div class="list">
+                  <li>Aluminium/Glass</li>
+                  <li>Artist</li>
+                  <li>A.C/Refrigeration services</li>
+                  <li>Barber</li>
+                  <li>Beautician</li>
+                  <li>Bricklayer/mason</li>
+                  <li>Capentry services</li>
+                  <li>Catering services</li>
+                  <li>CCTV/DSTV installations</li>
+                  <li>Electrical services</li>
+                  <li>Generator repairs</li>
+                  <li>Hairstylist/Make-Up Artist</li>
+                  <li>Painter/Wallpaper</li>
+                  <li>Phone/Laptop repairs</li>
+                  <li>Photographer/Videographer</li>
+                  <li>Plumbimg services</li>
+                </div>
+              </ul>
+            </div>
+            <div>
+              <h1>
+                Get a good artisan around your locality that can handle your job
+                without stress
+              </h1>
+            </div>
+
+            <div class="feedback-link">
+              <p id="give-feedback">
+                <strong style="cursor: pointer; color: rgb(64, 145, 145)">
+                  Give Feedback</strong
+                >
+              </p>
+            </div>
+
+            <div class="feedback-form" id="feedback" style="display: none">
+              <span
+                class="loginclose"
+                id="close-feedback"
+                style="cursor: pointer"
+                >&times;</span
+              >
+              <h3>Feedback Form</h3>
+              <p>Please provide your feedback below:</p>
+              <textarea rows="4" placeholder="Your feedback..."></textarea>
+              <button class="Fb_Btn" onclick="submitFeedback()">Send</button>
+            </div>
+            <script src="../scripts/feedback.js"></script>
+            <script src="../scripts/categories.js"></script>
+            <script src="../scripts/home.js"></script>
+          </div>
         </div>
+      </div>
     </section>
-
-
-</body>
+  </body>
 </html>

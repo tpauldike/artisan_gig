@@ -52,7 +52,7 @@ export const loginUser = async (req, res) => {
 
         const token = webToken.sign({ user_id: checkedUser }, secretKey, { expiresIn: "1hr" });
 
-        return res.status(200).json({ message: `${checkedUser[0].firstname} successfully logged in`, token });
+        return res.status(200).json({ firstname: `${checkedUser[0].firstname}`, lastname: `${checkedUser[0].lastname}`, message: "Successfully logged in", token });
 
     } catch (error) {
         console.log("Error signing in:", error.message);
