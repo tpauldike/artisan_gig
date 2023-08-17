@@ -46,6 +46,8 @@ Name | Role
 `/feedback`: This API is used to send feedback and ratings 
 
 ## Usage/Installation
+*Firstly, beware that the web pages are not mobile responsive*
+
 To use the app or to see how it works, simply visit the website https://artisangig.vercel.app, sign up and sign in.
 However, if you are a developer and will like to run the app on your computer, locally. Follow the instruction below:
 
