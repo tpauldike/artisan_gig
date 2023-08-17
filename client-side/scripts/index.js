@@ -8,8 +8,8 @@ const clientForm = document.getElementById('user-form');
 const artisanForm = document.getElementById('artisan-form');
 // const clientSignup = document.getElementById('client-submit');
 
-const baseURL = "https://artisangig-api.vercel.app";
-// const baseURL = "http://localhost:4001";
+// const baseURL = "https://artisangig-api.vercel.app";
+const baseURL = "http://localhost:4001";
 
 // Client sign up
 clientForm.addEventListener('submit', async (event) => {
