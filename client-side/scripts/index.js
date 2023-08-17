@@ -150,7 +150,7 @@ loginForm.addEventListener("submit", async (event) => {
         console.log(data);
         if (data.message === "Successfully logged in") {
             localStorage.setItem("userToken", data.token);
-            localStorage.setItem("initials", data.firstname[0] +" "+ data.lastname[0]);
+            localStorage.setItem("initials", data.firstname[0] + data.lastname[0]);
             localStorage.setItem("userFirstname", data.firstname);
             localStorage.setItem("userLastname", data.lastname);
             setTimeout(() => {
