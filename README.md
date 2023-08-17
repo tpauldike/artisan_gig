@@ -30,31 +30,36 @@ Name | Role
 
 * `/user/sign_up`: This API is used for user sign up.
 * `/user/sign_in`: This API is used for user authentication and sign in.
-* `/user/delete`: This API is used to delete user account
+* `/user/delete`: This API is used to delete user account alongside all data belonging to the user.
+* `/user/update`: This API is used to update the information of the user, but the email.
 
 ### Artwork 
 
-* `/artwork/create`: This API is used to create artwork by providing information such as the category of the artwork, description, and artisan credentials..
-* `/artwork/update`: This API is used to update any artwork initially created.
-* `/artwork/delete`: This API is used to delete any artwork initially created.
-* `/artwork/categories`: This API is used to view all categories of artisans available on the app.
-* `/artwork/artworks`: This API is used to view artworks registered under the various categories and reviews. 
+* `/artworks/`: This API is used to `create` artwork by providing information such as the category of the artwork, description, and artisan credentials..
+* `/artworks/:artwork_id`: This API is used to `update` any artwork initially created.
+* `/artworks/:artwork_id`: This API is used to `retrieve` info about an existing artwork.
+* `/artworks/:artwork_id`: This API is used to `delete` an artwork initially created.
+* `/artworks/category`: This API is used to view all artworks available in the category of choice.
+* `/artworks/all`: This API is used to view all the artworks registered.
 
 ### Feedback
-`/feedback`: This API is used to send feedback aand ratings 
+`/feedback`: This API is used to send feedback and ratings 
 
-## Installation
+## Usage/Installation
+To use the app or to see how it works, simply visit the website https://artisangig.vercel.app, sign up and sign in.
+However, if you are a developer and will like to run the app on your computer, locally. Follow the instruction below:
 
 To install and run the app locally:
 - git clone the repo
-- run npm install
-- have a .env file with the needed credentials to connect to MySQL (do this on the server side)
-- Have MySQL installed on your localhost
-- Then run the app on your local server, frontend or port 5000 and backend on port 3000, or use Postman to interact with the APIs directly.
+- navigate into the server-side folder, `cd server-side`
+- run `npm install`
+- Have MySQL installed on your localhost and copy & paste the commands in [artisan_gig.sql](./server-side/artisan_gig.sql) in your MySQL.
+- have a `.env` file with the needed credentials to connect to MySQL (do this on the server side)
+- Then run the app on your local server, frontend or port 5000 and backend on port 4001, or use Postman to interact with the APIs directly.
 
 ## Deployment
 
-The app is hosted on Vercel but still getting fixed and not launched yet
+The frontend and the APIs are hosted on Vercel, while the database is hosted on clever-cloud, and they are all connected.
 
 ## Contributing
 

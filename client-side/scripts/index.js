@@ -26,7 +26,8 @@ clientForm.addEventListener('submit', async (event) => {
     }
 
     formDataAsObject['role'] = 'Client';
-    const phoneRegex = /^(\+234)\d{10,11}$/;
+    
+    const phoneRegex = /^(\+234)\d{10,11}$/; //check the phone no. for the required format
     if (!phoneRegex.test(formDataAsObject['phone'])) {
         console.log('Phone not valid; expected +234**********')
         alert("Invalid phone number!\nUse the format +234********** with no space;\nThe number should be complete and correct");
@@ -45,7 +46,10 @@ clientForm.addEventListener('submit', async (event) => {
 
         const data = await response.json();
         console.log(data);
-        if (data.message === `New ${formDataAsObject['sex']} ${formDataAsObject['role']}, ${formDataAsObject['firstname']} ${formDataAsObject['lastname']}, created sucessfully`) {
+        if (data.message === "User with this email already exists!") {
+            alert(data.message);
+            clientSubmitBtn.innerHTML = 'Submit';
+        } else if (data.message === `New ${formDataAsObject['sex']} ${formDataAsObject['role']}, ${formDataAsObject['firstname']} ${formDataAsObject['lastname']}, created sucessfully`) {
             clientSubmitBtn.innerHTML = 'Submit';
             clientForm.reset();
             alert("You successfully signed up, you may sign in now");
@@ -59,7 +63,8 @@ clientForm.addEventListener('submit', async (event) => {
 
     } catch (error) {
         document.getElementById('client-submit').innerHTML = 'Submit';
-        console.log(error)
+        console.log(error);
+        alert('An error occured');
     }
 });
 
@@ -78,6 +83,7 @@ artisanForm.addEventListener('submit', async (event) => {
     }
 
     formDataAsObject['role'] = 'Artisan';
+    
     const phoneRegex = /^(\+234)\d{10,11}$/;
     if (!phoneRegex.test(formDataAsObject['phone'])) {
         console.log('Phone not valid; expected +234**********')
@@ -98,7 +104,10 @@ artisanForm.addEventListener('submit', async (event) => {
 
         const data = await response.json();
         console.log(data);
-        if (data.message === `New ${formDataAsObject['sex']} ${formDataAsObject['role']}, ${formDataAsObject['firstname']} ${formDataAsObject['lastname']}, created sucessfully`) {
+        if (data.message === "User with this email already exists!") {
+            alert(data.message);
+            artisanSubmitBtn.innerHTML = 'Create Account';
+        } else if (data.message === `New ${formDataAsObject['sex']} ${formDataAsObject['role']}, ${formDataAsObject['firstname']} ${formDataAsObject['lastname']}, created sucessfully`) {
             artisanContainer.style.display = "none";
             artisanSubmitBtn.innerHTML = 'Create Account';
             artisanForm.reset();
